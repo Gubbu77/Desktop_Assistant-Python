@@ -169,6 +169,7 @@ def closeApp(text):
 def jokes():
     jokes = pyjokes.get_joke(language= 'en', category= 'neutral')
     assistant_speak(jokes)
+    assistant_speak("How is that need another one")
 
 def process_text(text):
     try:
