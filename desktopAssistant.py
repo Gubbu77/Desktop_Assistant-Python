@@ -135,6 +135,11 @@ def closeApp(text):
         assistant_speak("Closing Chrome")
         close_app("chrome")
         return
+    
+    elif "spotify" in text:
+        assistant_speak("Closing Spotify")
+        close_app("Spotify)
+        return
 
     elif "files" in text or "file" in text or "file explore" in text :
         assistant_speak("Closing File explore")
