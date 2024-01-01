@@ -238,7 +238,7 @@ if __name__ == "__main__" :
 
     if "hey jarvis" in str(text).lower() or "jarvis" in str(text).lower() or  "hello jarvis" in str(text).lower() or "hello" in text.lower() or "hi" in text.lower() or "hey" in text.lower():
         assistant_speak("yes sir")
-        # assistant_speak('''Welcome sir, Iam your personal assistant Jarvis''')
+       
 
         assistant_speak("What can i do for you?")
         while (1) :
