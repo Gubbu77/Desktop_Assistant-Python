@@ -41,7 +41,7 @@ def get_audio():
         recognizer.pause_threshold = 1
         audio = recognizer.listen(source)
 
-        # audio = recognizer.listen(source, phrase_time_limit= 5)
+       
     print('Stop')
 
     try:
@@ -66,7 +66,7 @@ def close_app(app_name) :
         if sys_app in app_name.split() or app_name in sys_app :
             pid = app.info.get('pid')  # returns PID of the given app if found running
 
-            try :  # deleting the app if asked app is running.(It raises error for some windows apps)
+            try :  
                 app_pid = psutil.Process(pid)
                 app_pid.terminate()
                 found = True
